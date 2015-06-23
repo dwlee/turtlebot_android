@@ -232,7 +232,6 @@ public class VoiceCommander extends RosAppActivity implements View.OnClickListen
         else if(input.contains("뒤쪽")){
             return "backward";
         }
-
         else if(input.contains("오른쪽")){
             return "right";
         }
@@ -247,6 +246,12 @@ public class VoiceCommander extends RosAppActivity implements View.OnClickListen
         }
         else if(input.contains("멈춰")){
             return "stop";
+        }
+        else if(input.contains("조심")){
+            return "warn";
+        }
+        else if(input.contains("위험")){
+            return "danger";
         }
         return "";
     }
